@@ -1,0 +1,296 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  color: white;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+.header-container.scrolled {
+  background-color: black; 
+}
+ 
+.header-items{
+  margin: auto;
+  display: flex;
+  width: 100%;
+  height: 55px;
+  padding: 5px 85px;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo{
+  height: 50px;
+  width: 200px;
+}
+.css-b62m3t-container {
+  width: 95px;
+  margin-left: 15px;
+  display: inline;
+}
+
+.select {
+  width: 50px !important;
+}
+
+.header-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+#logo svg path {
+  fill: white;
+}
+
+.icon-container {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  padding: 0px 70px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-icon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #6e6e78;
+}
+
+.middle-player {
+  width: 100%;
+  height: 50px;
+  padding: 2px 60px;
+  display: flex;
+  flex-direction: row;
+}
+.layout-onboarding-auth__apple-icon {
+  width: 30px; 
+  height: 30px;
+  fill: #c7bfbf; 
+}
+.song-container{
+  display: flex;
+  align-items: center;
+  padding: 0px 5px;
+  border: 1px solid rgba(128, 128, 128, 0.285);
+  justify-content: center;
+}
+.song-icon {
+  height: 30px;
+  width: 30px;
+  background-image:-webkit-image-set(1);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.song-icon svg path {
+  fill: rgb(116, 114, 114); /* Change this color to the desired color */
+}
+.player-container {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #505053;
+}
+.admin{
+  display: flex;
+}
+.list-icon {
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  color: #bfbfc4;
+}
+
+.MuiPaper-root.MuiDialog-paper.MuiDialog-paperScrollPaper.MuiDialog-paperWidthSm.MuiPaper-elevation24.MuiPaper-rounded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  max-height: 70%;
+  min-width: 40%;
+  overflow: hidden;
+}
+
+/* Rest of your existing styles for the header... */
+
+.user-options {
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.user-options a {
+  color: #333;
+  text-decoration: none;
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.user-options a:hover {
+  background-color: #f0f0f0;
+}
+
+.logout-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+/* Update the button style */
+button.login-btn {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  outline: none;
+  background-color: #d60017;
+  padding: 4px 11px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust the cart icon style */
+.cart-icon {
+  margin-right: 3px;
+}
+
+/* Style the button on hover */
+button.login-btn:hover {
+  background-color: #fa586a;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Style the button on hover */
+button.login-btn:hover {
+  background-color: #fa586a;
+}
+.slider-style {
+  appearance: none;
+  width: 100%;
+  color: rgb(255, 255, 255) !important;
+  height: 4px;
+  margin-left: 5px;
+  border-radius: 2px;
+  outline: none;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+  position: relative;
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+nav li::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: width 0.2s ease-in-out;
+}
+
+nav li:hover::before {
+  width: 100%;
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .icon-container,.list-icon{
+    display: none;
+  }
+  .header-items{
+    justify-content: space-between;
+  }
+   .hamburger-icon,.header-logo{
+    display: block;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: #6e6e78;
+  }
+}
+

@@ -1,0 +1,124 @@
+/* Capsules Container */
+.capsules-container {
+    text-align: start;
+    background-color: black;
+    max-width: 100%;
+    overflow: hidden;
+    
+  }
+  .capsule-img{
+    padding: 20px;
+    background-image: url("https://www.spacex.com/static/images/backgrounds/launches/launches_header_desktop.jpg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* Capsule Data Grid */
+  .capsules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    
+  }
+  .cap-type{
+    float: right;
+    color: tomato;
+  }
+  .number-increment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .number-increment:hover {
+    transform: scale(1.1);
+  }
+  
+
+/* Individual Capsule Box */
+.capsule-box {
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  .capsule-details{
+    font-size: 2rem;
+  }
+  /* Add this CSS to your Capsules.css or a separate CSS file */
+.search-form{
+    display: flex;
+  padding: 50px 0px;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+.search-input{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+/* Style for text fields */
+.MuiTextField-root {
+
+    width: 30%;
+  }
+  
+  /* Style for the outlined input */
+  .MuiOutlinedInput-root {
+    position: relative;
+    background-color: #141212; /* Grey background */
+    border-color: white !important; /* White border */
+  }
+  
+  /* Style for the focused input */
+  .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: white !important; /* White border on focus */
+  }
+  
+  /* Style for the input label */
+  .MuiInputLabel-outlined {
+    color: white !important; /* White label text */
+  }
+  
+  /* Style for the input text */
+  .MuiOutlinedInput-input {
+    color: white !important; /* White input text */
+  }
+  
+  
+  
+  /* Individual Capsule Data Styling */
+  .capsule-serial {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .capsule-status {
+    margin: 10px 0;
+  }
+.MuiPaper-root{
+    color: white !important;
+    gap: 10px;
+    background-color: black !important;
+}

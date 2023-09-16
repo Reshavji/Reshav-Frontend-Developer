@@ -1,0 +1,55 @@
+/* Rockets.css */
+
+.contain {
+  padding: 80px 0;
+  color: white;
+}
+
+.rocket {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.inner-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: white !important;
+}
+
+a {
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rocket-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #444;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  flex-basis: calc(33.33% - 20px); /* Adjust the width as needed for responsiveness */
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.description {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Limit the description to 4 lines */
+  -webkit-box-orient: vertical;
+}

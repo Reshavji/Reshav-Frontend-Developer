@@ -1,0 +1,13 @@
+/* Home.css */
+.home {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: row; /* Change to row layout on smaller screens */
+    }
+  }
+  

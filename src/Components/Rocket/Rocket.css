@@ -1,0 +1,77 @@
+/* Rocket.css */
+
+/* Loading state */
+.rocket-loading {
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Error state */
+  .rocket-error {
+    font-size: 16px;
+    color: red;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* No data state */
+  .rocket-no-data {
+    font-size: 16px;
+    color: #666;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Rocket details container */
+  .rocket-details {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Rocket title */
+  .rocket-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: tomato; /* Header color */
+  }
+  
+  /* Rocket ID */
+  .rocket-id {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rocket Name */
+  .rocket-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rocket Country */
+  .rocket-country {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rocket Description */
+  .rocket-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Additional Data Fields */
+  .rocket-field {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Header for Additional Data Fields */
+  .rocket-header {
+    color: tomato; /* Header color */
+  }
+  

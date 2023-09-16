@@ -1,0 +1,46 @@
+/* Slider.css */
+
+.slider-container {
+  position: relative;
+  overflow: hidden; /* Hide the horizontal overflow */
+}
+
+.image-container {
+  display: flex;
+  gap: 2rem;
+  scroll-behavior: smooth;
+  padding: 1rem 0.75rem;
+  overflow-x: auto;
+  width: 100%; /* Set the container width to 100% */
+}
+
+.image-container::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 4rem !important;
+}
+
+.slider-icon {
+  font-size: 50px;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+img {
+  height: 350px;
+  width: 100%; 
+  border-radius: 10px;
+}
