@@ -73,7 +73,7 @@ function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [scrollTimer]);
 
   return (
     <div className={`header-container ${isScrolledUp ? 'scrolled' : ''}`}>
