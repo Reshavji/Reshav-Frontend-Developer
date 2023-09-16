@@ -73,7 +73,8 @@ function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [scrollTimer]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className={`header-container ${isScrolledUp ? 'scrolled' : ''}`}>
