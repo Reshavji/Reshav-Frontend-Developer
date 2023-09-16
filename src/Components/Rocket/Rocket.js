@@ -53,11 +53,7 @@ function Rocket({ rocket_id }) {
       </p>
       <p className="rocket-field">
         <span className="rocket-header">Country:</span> {rocketData.country}
-      </p>
-      <p className="rocket-field">
-        <span className="rocket-header">Description:</span> {rocketData.description}
-      </p>
-      
+      </p>      
       {/* Additional Data Fields */}
       <p className="rocket-field">
         <span className="rocket-header">Stages:</span> {rocketData.stages}
@@ -71,7 +67,9 @@ function Rocket({ rocket_id }) {
       <p className="rocket-field">
         <span className="rocket-header">First Flight:</span> {rocketData.first_flight}
       </p>
-      {/* Add more fields as needed */}
+      <p className="rocket-field">
+        <span className="rocket-header">Description:</span> {rocketData.description}
+      </p>
     </div>
   );
 }
