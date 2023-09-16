@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import { useStateValue } from '../Context/StateProvider';
 import Logo from '../Images/logo.png';
@@ -53,14 +53,14 @@ function Header() {
   };
 
   
-  let scrollTimer = null;
+  const scrollTimer = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 800) {
         setIsScrolledUp(true);
-        clearTimeout(scrollTimer);
-        scrollTimer = setTimeout(() => {
+        clearTimeout(scrollTimer.current);
+        scrollTimer.current = setTimeout(() => {
           setIsScrolledUp(false);
         }, 3000); // Adjust the delay as needed (e.g., 500ms)
       } else {
@@ -73,7 +73,6 @@ function Header() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
