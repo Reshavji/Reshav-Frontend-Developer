@@ -51,7 +51,7 @@ function Rockets() {
                   }}
                 >
                   <CardContent>
-                    <Typography variant="h6" gutterBottom>
+                    <Typography variant="h6" color='tomato' gutterBottom>
                       {rocket.rocket_name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" className="description">

@@ -87,10 +87,10 @@
   /* Style for the outlined input */
   .MuiOutlinedInput-root {
     position: relative;
-    background-color: #141212; /* Grey background */
+    background-color: #26252d; /* Grey background */
     border-color: white !important; /* White border */
   }
-  
+
   /* Style for the focused input */
   .Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: white !important; /* White border on focus */

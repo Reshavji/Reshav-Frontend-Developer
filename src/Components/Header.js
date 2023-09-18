@@ -6,13 +6,16 @@ import { auth } from '../config/firebase';
 import { Link } from 'react-router-dom';
 import { Dialog } from '@material-ui/core';
 import './Header.css';
-import Login from './Login'
+import Login from './Login';
+import Sidebar from './Sidebar/Sidebar'; // Import the Sidebar component
+import MenuIcon from '@material-ui/icons/Menu'; // Import the hamburger icon
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
   const [showLoginModal, setShowLoginModal] = useState(false);
-  const [showUserOptions, setShowUserOptions] = useState(false); // Add state for user options visibility
+  const [showUserOptions, setShowUserOptions] = useState(false);
   const [isScrolledUp, setIsScrolledUp] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false); // State for sidebar visibility
 
   const handleLoginButtonClick = () => {
     setShowLoginModal(true);
@@ -77,48 +80,59 @@ function Header() {
 
   return (
     <div className={`header-container ${isScrolledUp ? 'scrolled' : ''}`}>
+      <div className='header-main'>
       <div className='header-items'>
         <div>
           <Link to="/">
-   <img className='logo' src={Logo} alt='spaceX' ></img></Link>
+            <img className='logo' src={Logo} alt='spaceX' />
+          </Link>
         </div>
         <nav>
           <ul>
-          <Link to="/rockets"><li>Rockets</li></Link>
-          <Link to="/capsules"><li>Capsules</li></Link>
+            <Link to="/rockets"><li>Rockets</li></Link>
+            <Link to="/capsules"><li>Capsules</li></Link>
           </ul>
-          </nav>
-          <div
-            className='avatar'
-            onMouseEnter={handleUserOptionsMouseEnter}
-            onMouseLeave={handleUserOptionsMouseLeave}
-          >
-            {user ? (
-              <div className='admin' onClick={handleAdminClick}>
-                <PersonOutlineIcon className="cart-icon" />
-                <span className='header-text'>{user.displayName || user.name}</span>
-              </div>
-            ) : (
-              <button className='login-btn' onClick={handleLoginButtonClick}>
-                Login
+        </nav>
+        <div
+          className='avatar'
+          onMouseEnter={handleUserOptionsMouseEnter}
+          onMouseLeave={handleUserOptionsMouseLeave}
+        >
+          {user ? (
+            <div className='admin' onClick={handleAdminClick}>
+              <PersonOutlineIcon className="cart-icon" />
+              <span className='header-text'>{user.displayName || user.name}</span>
+            </div>
+          ) : (
+            <button className='login-btn' onClick={handleLoginButtonClick}>
+              Login
+            </button>
+          )}
+          {showUserOptions && user && (
+            <div className="user-options">
+              <button className='logout-btn' onClick={handleLogout}>
+                Logout
               </button>
-            )}
-            {showUserOptions && user && (
-              <div className="user-options">
-                <button className='logout-btn' onClick={handleLogout}>
-                  Logout
-                </button>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
+        </div>
+       
+       
       </div>
+       {/* Hamburger icon */}
+      <div className='hamburger-icon' onClick={() => setShowSidebar(true)}>
+        <MenuIcon fontSize='medium'/>
+      </div>
+      </div>
+      
 
-      {/* Login Modal */}
+      {/* Sidebar */}
+      <Sidebar isOpen={showSidebar} onClose={() => setShowSidebar(false)} />
+
       {/* Login Modal */}
       <Dialog open={showLoginModal} onClose={handleCloseLoginModal}>
         <Login handleCloseLoginModal={handleCloseLoginModal} />
       </Dialog>
-      
     </div>
   );
 }

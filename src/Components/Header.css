@@ -35,10 +35,6 @@
   display: inline;
 }
 
-.select {
-  width: 50px !important;
-}
-
 .header-icons {
   display: flex;
   flex-wrap: nowrap;
@@ -71,52 +67,6 @@
   justify-content: space-between;
 }
 
-.player-icon{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: #6e6e78;
-}
-
-.middle-player {
-  width: 100%;
-  height: 50px;
-  padding: 2px 60px;
-  display: flex;
-  flex-direction: row;
-}
-.layout-onboarding-auth__apple-icon {
-  width: 30px; 
-  height: 30px;
-  fill: #c7bfbf; 
-}
-.song-container{
-  display: flex;
-  align-items: center;
-  padding: 0px 5px;
-  border: 1px solid rgba(128, 128, 128, 0.285);
-  justify-content: center;
-}
-.song-icon {
-  height: 30px;
-  width: 30px;
-  background-image:-webkit-image-set(1);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.song-icon svg path {
-  fill: rgb(116, 114, 114); /* Change this color to the desired color */
-}
-.player-container {
-  margin: auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #505053;
-}
 .admin{
   display: flex;
 }
@@ -206,10 +156,6 @@ button.login-btn {
   justify-content: center;
 }
 
-/* Adjust the cart icon style */
-.cart-icon {
-  margin-right: 3px;
-}
 
 /* Style the button on hover */
 button.login-btn:hover {
@@ -274,7 +220,9 @@ nav li:hover::before {
     transform: scaleX(1);
   }
 }
-
+.hamburger-icon{
+  display: none;
+}
 
 @media (max-width: 768px) {
 
@@ -282,15 +230,26 @@ nav li:hover::before {
     display: none;
   }
   .header-items{
-    justify-content: space-between;
+    justify-content: center;
+    padding: 0px 0px;
   }
-   .hamburger-icon,.header-logo{
-    display: block;
+  .header-main{
     display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  color: #6e6e78;
+    align-items: center;
   }
+   .hamburger-icon{
+   display: block;
+  align-items: center;
+  margin-left: 50px;
+  color: #ffffff !important;
+
+  }
+  nav, .avatar{
+    display: none;
+  }
+  .logo{
+    margin-left: 20px;
+  }
+
 }
 
