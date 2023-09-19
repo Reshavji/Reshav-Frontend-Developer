@@ -7,3 +7,6 @@
 
 # Rocket Details
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Rocket.gif" alt="rockets" />
+
+# Capsules
+<img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Capsules.gif" alt="rockets" />
