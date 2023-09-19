@@ -3,13 +3,13 @@
     position: fixed;
     top: 0;
     right: -300px;
-    width: 300px;
+    width: 250px;
     height: 100%;
     background-color: #000000;
     transition: right 0.3s ease;
     z-index: 100; 
     overflow-y: auto;
-    padding: 30px;
+    padding: 50px;
     text-align: right;
   }
   
