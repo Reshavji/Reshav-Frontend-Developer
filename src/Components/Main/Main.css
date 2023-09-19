@@ -51,7 +51,7 @@
   position: relative;
   outline: 2px solid white;
   transition: all 0.3s ease;
-  z-index: 2;
+  z-index: 1;
 }
 .home-btn:after {
   position: absolute;
