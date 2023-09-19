@@ -253,7 +253,7 @@ nav li:hover::before {
     margin-left: 95px;
   }
     /* Close button style */
-    .close-button {
+    .MuiSvgIcon-root {
       position: absolute;
       top: 10px;
       right: 10px;
