@@ -55,10 +55,10 @@ function Rockets() {
                       {rocket.rocket_name}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" className="description">
-                      Country: {rocket.country}
+                      <strong>Country: </strong>{rocket.country}
                     </Typography>
                     <Typography variant="body2" color="textSecondary" className="description">
-                      Description: {rocket.description}
+                      <strong>Description: </strong>{rocket.description}
                     </Typography>
                   </CardContent>
                 </Card>

@@ -1,60 +1,57 @@
-.container{
-    padding: 20px;
-    background-image: url("https://source.unsplash.com/random/?spaceX/");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+.container {
+  padding: 20px;
+  background-image: url("https://source.unsplash.com/random/?spaceX");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
 
-.second-background{
-    padding: 20px;
-    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+.second-background {
+  padding: 20px;
+  background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
 }
-.third-background{
+.third-background {
   padding: 20px;
   background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg");
   height: 100vh;
   background-position: center;
   background-size: cover;
 }
-.inner-section{
-    max-width: 1440px;
-    padding: 0px 60px;
-    display: flex;
-    flex-direction: column;
+.inner-section {
+  max-width: 1440px;
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
 }
-.data-box{
-    width: 50%;
-    margin-top: 400px;
-    padding: 20px;
-    color: white;
+.data-box {
+  width: 50%;
+  margin-top: 400px;
+  padding: 20px;
+  color: white;
 }
-.first-tag{
-    font-size: 1.4rem;
+.first-tag {
+  font-size: 1.4rem;
 }
-.second-tag{
-    font-size: 2.7rem;
-    font-weight: 600;
+.second-tag {
+  font-size: 2.7rem;
+  font-weight: 600;
 }
-.home-btn{
-    margin-top: 20px;
-    padding: 18px 40px;
-    color: white;
-    background-color: transparent;
-    border: none;
-    font-weight: 600;
-   
-    background: transparent;
+.home-btn {
+  margin-top: 20px;
+  padding: 18px 40px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  background: transparent;
   cursor: pointer;
   position: relative;
-  transition: all 0.3s ease;
-  outline: none;
-}
-.home-btn{
   outline: 2px solid white;
+  transition: all 0.3s ease;
+  z-index: 2;
 }
 .home-btn:after {
   position: absolute;
@@ -65,11 +62,7 @@
   left: 0;
   z-index: -1;
   background-color: #ffffff;
-  background-image: linear-gradient(315deg, #ffffff 0%, #ffffff 74%);
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 .home-btn:hover {
   color: #000;
@@ -84,17 +77,16 @@
 }
 
 @media screen and (max-width: 768px) {
-    .data-box {
-      width: 80%; /* Adjust as needed */
-      margin-top: 275px !important; /* Adjust as needed */
-    }
-  
-    .first-tag {
-      font-size: 1.2rem; /* Adjust as needed */
-    }
-  
-    .second-tag {
-      font-size: 2rem; /* Adjust as needed */
-    }
+  .data-box {
+    width: 80%; /* Adjust as needed */
+    margin-top: 275px !important; /* Adjust as needed */
   }
-  
+
+  .first-tag {
+    font-size: 1.2rem; /* Adjust as needed */
+  }
+
+  .second-tag {
+    font-size: 2rem; /* Adjust as needed */
+  }
+}

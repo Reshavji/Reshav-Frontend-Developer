@@ -11,7 +11,7 @@
   scroll-behavior: smooth;
   padding: 1rem 0.75rem;
   overflow-x: auto;
-  width: 100%; /* Set the container width to 100% */
+  width: 100%; 
 }
 
 .image-container::-webkit-scrollbar {

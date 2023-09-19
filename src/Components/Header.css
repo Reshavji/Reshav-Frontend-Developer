@@ -7,7 +7,7 @@
   color: white;
   text-align: center;
   padding: 20px;
-  z-index: 1;
+  z-index: 3;
   transition: background-color 0.3s ease;
 }
 .header-container.scrolled {
@@ -134,7 +134,7 @@
   background-color: #d32f2f;
 }
 /* Update the button style */
-button.login-btn {
+.login-btn {
   appearance: none;
   background: none;
   border: none;
@@ -147,9 +147,8 @@ button.login-btn {
   text-decoration: none;
   display: inline-block;
   outline: none;
-  background-color: #d60017;
-  padding: 4px 11px;
-  border-radius: 6px;
+  background-color: tomato;
+  padding: 8px 15px;
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
@@ -158,18 +157,15 @@ button.login-btn {
 
 
 /* Style the button on hover */
-button.login-btn:hover {
-  background-color: #fa586a;
+.login-btn:hover {
+  background-color: rgb(67, 109, 246);
+  color: white;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Style the button on hover */
-button.login-btn:hover {
-  background-color: #fa586a;
-}
 .slider-style {
   appearance: none;
   width: 100%;
@@ -203,13 +199,13 @@ nav li::before {
   height: 1px;
   background-color: #fff;
   bottom: 0;
-  left: 0;
+  right: 0;
   transition: width 0.2s ease-in-out;
 }
 
 nav li:hover::before {
   width: 100%;
-  animation: slideIn 0.5s forwards;
+  animation: slideIn 0.5s backwards;
 }
 .capsule-popup{
   overflow: hidden !important;
@@ -217,6 +213,9 @@ nav li:hover::before {
 @keyframes slideIn {
   0% {
     transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(0.5);
   }
   100% {
     transform: scaleX(1);
