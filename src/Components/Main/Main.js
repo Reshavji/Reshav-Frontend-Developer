@@ -18,7 +18,7 @@ function Main() {
        <div className='data-box'>
 <p className='first-tag'>COMPLETED MISSION</p>
 <h1 className='second-tag'>DRAGON AND CREW-6 RETURN TO EARTH</h1>
-<button className='home-btn'>LEARN MORE</button>
+<button className='home-btn btn-1'>LEARN MORE</button>
 </div>
        </div>
           </div>

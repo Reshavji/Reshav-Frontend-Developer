@@ -12,6 +12,6 @@ width: 350px;
 font-size: small;
 font-weight:600 ;
 display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 justify-content: space-around;
 }
