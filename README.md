@@ -11,8 +11,14 @@
 # Capsules
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Capsules.gif" alt="rockets" />
 
-# Capsules Type Search
+# Capsules Status Search
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Type%20Search.gif" alt="Cap" />
 
 # Capsules Launch Date Search
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Launch%20Date.gif" alt="Cap" />
+
+# Capsules Type Search
+<img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Type%20Searchs.gif" alt="Cap" />
+
+# Sign In With the help of Firebase
+<img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Sign%20In.gif" alt="Cap" />
