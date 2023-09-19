@@ -13,3 +13,6 @@
 
 # Capsules Type Search
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Type%20Search.gif" alt="Cap" />
+
+# Capsules Launch Date Search
+<img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Launch%20Date.gif" alt="Cap" />
