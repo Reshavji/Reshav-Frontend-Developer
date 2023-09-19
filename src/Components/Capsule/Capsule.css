@@ -16,7 +16,7 @@
   
   .close-button {
     color: black !important;
-    top: 2px;
+    top: -1px;
   }
   
   .capsule-details p {
