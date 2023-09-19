@@ -4,3 +4,6 @@
 
 # Rockets 
 <img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Rockets.gif" alt="rockets" />
+
+# Rocket Details
+<img src = "https://github.com/Reshavji/Reshav-Frontend-Developer/blob/main/Images/Rocket.gif" alt="rockets" />
