@@ -24,7 +24,7 @@ function Sidebar({ isOpen, onClose }) {
 
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-      <div className='close-button' onClick={onClose}>
+      <div className='close-btn' onClick={onClose}>
         <CloseIcon />
       </div>
       <ul>
